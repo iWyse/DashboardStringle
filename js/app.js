@@ -196,6 +196,20 @@
             aboutUser.style.animation = "slideRight 0.45s ease-in-out forwards";
         }
     }));
+    const searchButton = document.querySelector(".search-box__button");
+    const searchInput = document.querySelector(".search-box__input");
+    document.addEventListener("click", (e => {
+        const target = e.target;
+        target === searchButton ? toggle() : target !== searchButton ? remove() : false;
+    }));
+    function toggle() {
+        searchInput.classList.toggle("search-box__input--active");
+        document.getElementById("currentDate").classList.toggle("date-block__date--active");
+    }
+    function remove() {
+        searchInput.classList.remove("search-box__input--active");
+        document.getElementById("currentDate").classList.remove("date-block__date--active");
+    }
     window["FLS"] = false;
     isWebp();
 })();
