@@ -198,17 +198,17 @@
     }));
     const searchButton = document.querySelector(".search-box__button");
     const searchInput = document.querySelector(".search-box__input");
+    const nowDate = document.getElementById("currentDate");
+    searchButton.onclick = function(e) {
+        searchInput.value = "";
+    };
     document.addEventListener("click", (e => {
         const target = e.target;
-        target === searchButton ? toggle() : target !== searchButton ? remove() : false;
+        target === searchButton ? toggle() : false;
     }));
     function toggle() {
         searchInput.classList.toggle("search-box__input--active");
-        document.getElementById("currentDate").classList.toggle("date-block__date--active");
-    }
-    function remove() {
-        searchInput.classList.remove("search-box__input--active");
-        document.getElementById("currentDate").classList.remove("date-block__date--active");
+        nowDate.classList.toggle("date-block__date--active");
     }
     window["FLS"] = false;
     isWebp();
