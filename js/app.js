@@ -1,5 +1,48 @@
 (() => {
     "use strict";
+    //* Скрипт на динамическую дату честно нагуглил за минуты. Очень рад что это быстро реализовалось
+    // let d = new Date;
+    // let day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    // let month = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+    // document.getElementById("currentDate").innerHTML = `${+d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear() + ", " + day[d.getDay()]}`;
+    //* Скрипт на сворачивается бокового блока
+    // const userInfo = document.querySelector(".main-user");
+    // const aboutUser = document.querySelector(".about");
+    // const closeUser = document.querySelector(".close-user");
+    // userInfo.addEventListener("click", (() => {
+    //     if (!aboutUser.classList.contains("user-open")) {
+    //         aboutUser.classList.add("user-open");
+    //         aboutUser.style.animation = "slideLeft 0.45s ease-in-out forwards";
+    //     } else {
+    //         setTimeout((() => {
+    //             aboutUser.classList.remove("user-open");
+    //         }), 300);
+    //         aboutUser.style.animation = "slideRight 0.45s ease-in-out forwards";
+    //     }
+    // }));
+    // closeUser.addEventListener("click", (() => {
+    //     if (aboutUser.classList.contains("user-open")) {
+    //         setTimeout((() => {
+    //             aboutUser.classList.remove("user-open");
+    //         }), 300);
+    //         aboutUser.style.animation = "slideRight 0.45s ease-in-out forwards";
+    //     }
+    // }));
+    //* Скрипт на закрытие поиска и удаление слов набранных в инпуте при нажатии на поиск
+    // const searchButton = document.querySelector(".search-box__button");
+    // const searchInput = document.querySelector(".search-box__input");
+    // const nowDate = document.getElementById("currentDate");
+    // searchButton.onclick = function(e) {
+    //     searchInput.value = "";
+    // };
+    // document.addEventListener("click", (e => {
+    //     const target = e.target;
+    //     target === searchButton ? toggle() : false;
+    // }));
+    // function toggle() {
+    //     searchInput.classList.toggle("search-box__input--active");
+    //     nowDate.classList.toggle("date-block__date--active");
+    // }
     function isWebp() {
         function testWebP(callback) {
             let webP = new Image;
